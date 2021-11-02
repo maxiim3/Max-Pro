@@ -1,0 +1,158 @@
+html {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 1rem;
+  scroll-behavior: smooth;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  background-image: url(/ressources/dan-cristian-padure-XOXMERp2LZE-unsplash.jpg);
+  background-repeat: no-repeat;
+  /* *** Fix the X --> Au dela de width 757px */
+  background-position-x: -1000px;
+  background-position-y: 200px;
+  /* * */
+  background-size: cover;
+  background-attachment: scroll;
+}
+
+.hero {
+  height: 200vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+/* 
+
+===================== HEADER =====================
+ */
+.hero header {
+  width: 100%;
+  height: 100vh;
+  display: inherit;
+  /* Change with the portview */
+  flex-direction: column;
+  /* * */
+  align-items: center;
+  justify-content: flex-start;
+}
+
+#phone {
+  /* Change   --> Au dela de width 757px */
+  width: 40vw;
+  height: 60%;
+  object-fit: cover;
+  /* * */
+}
+
+header h1,
+header p {
+  margin: 0.5rem;
+}
+
+/* 
+===================== FOOTER =====================
+ */
+
+.hero footer {
+  width: 100%;
+  height: 100vh;
+  display: inherit;
+  /* Change with the portview */
+  flex-direction: column;
+  /* * */
+  align-items: stretch;
+  justify-content: center;
+}
+
+#social-media {
+  flex-direction: column;
+}
+
+#newsletter {
+  flex-direction: row;
+}
+
+#social-media,
+#newsletter {
+  display: inherit;
+  justify-content: center;
+  align-items: stretch;
+  margin: 20px;
+  z-index: 20;
+}
+
+/* === Left Side */
+#social-media-box-left {
+  display: inherit;
+  justify-content: center;
+  align-items: center;
+}
+#logo--msg {
+  color: rgb(10, 90, 238);
+  width: 30px;
+  height: 30px;
+  margin: 10px;
+}
+
+/* === Right Side */
+#social-media-box-right {
+  display: inherit;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#social-media-box-right p {
+  margin: 2px 30px;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+/* ===================== STYLES ===================== */
+
+/* --------------
+    FONTS
+   -------------- */
+
+h1 {
+  font-size: 2em;
+}
+
+p {
+  font-size: 1em;
+}
+
+#social-media-accroche {
+  font-size: 1em;
+}
+
+#newsletter {
+  font-size: 1em;
+}
+/* --------------
+    COLORS
+   -------------- */
+
+/* ===================== NAV ===================== */
+
+.nav {
+  width: 100%;
+  height: 100vh;
+  display: inherit;
+  position: absolute;
+  z-index: 10;
+}
+
+.nav:hover {
+  cursor: grab;
+}
+.nav:active {
+  cursor: grabbing;
+}
